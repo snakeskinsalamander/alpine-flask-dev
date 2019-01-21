@@ -14,11 +14,10 @@ deploy:
   region: "us-east-2"
   app: "alflask"
   env: "Alflask-env"
-  bucketname: "elasticbeanstalk-us-east-2-417856445387"
-  bucketpath: "alflask"
+  bucket_name: "elasticbeanstalk-us-east-2-417856445387"
+  bucket_path: "alflask"
   on:
     branch: "master"
   access_key_id: $access_key_id
   secret_access_key:
     secure: $access_key_secret
-
