@@ -8,3 +8,20 @@ before_install:
 
 script:
   - docker container run -p 5000:5000 -d --name alflask devianspade/alpine-flask
+
+deploy:
+  provider: "elasticbeanstalk"
+  region: "us-east-2"
+  app: "alflask001"
+  env: "Alflask001-env"
+  bucketname: "elasticbeanstalk-us-east-2-417856445387"
+  bucketpath: "alflask001"
+  on:
+    branch: "master"
+  access_key_id: $ACCESS_KEY_ID
+  secret_access_key:
+    secure: $ACCESS_KEY_SECRET
+
+
+
+
