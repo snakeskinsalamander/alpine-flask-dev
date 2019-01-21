@@ -18,9 +18,9 @@ deploy:
   bucketpath: "alflask001"
   on:
     branch: "master"
-  access_key_id: $ACCESS_KEY_ID
+  access_key_id: $access_key_id
   secret_access_key:
-    secure: $ACCESS_KEY_SECRET
+    secure: $access_key_secret
 
 
 
