@@ -12,16 +12,13 @@ script:
 deploy:
   provider: "elasticbeanstalk"
   region: "us-east-2"
-  app: "alflask001"
-  env: "Alflask001-env"
+  app: "alflask"
+  env: "Alflask-env"
   bucketname: "elasticbeanstalk-us-east-2-417856445387"
-  bucketpath: "alflask001"
+  bucketpath: "alflask"
   on:
     branch: "master"
   access_key_id: $access_key_id
   secret_access_key:
     secure: $access_key_secret
-
-
-
 
