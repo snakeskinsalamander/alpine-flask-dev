@@ -1,0 +1,10 @@
+sudo: required
+services:
+  - docker
+
+
+before_install:
+  - docker image pull devianspade/alpine-flask
+
+script:
+  - docker container run -p 5000:5000 -d --name alflask devianspade/alpine-flask
